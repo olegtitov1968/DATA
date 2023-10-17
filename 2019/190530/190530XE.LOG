@@ -1,0 +1,673 @@
+ ------ Head -----
+19MAY30XE_V005
+ 2019.165 09:01:32
+r4896, NEOSA  | geo_export                                                      
+$19MAY30XE
+     5
+19MAY30XE_V004
+$19MAY30XE04DBH880930 GSFC HPUX3
+ -----------
+ 
+ ------ History -----
+Dbedit: r4896, NEOSA  | geo_export
+VLBI experiment R4896 ( NEOSA ) 
+Created by dbedit Ver. 2018.03.07  revision 6.24
+        run by Stuart Vaughn Williscroft (VLBI) ( svw@fringe1 ) 
+            at USN -- United States Naval Observatory 
+               on fringe1 at 2019.06.13-13:59:42 local time 
+Dbedit control file history entry: r4896, NEOSA  | geo_export                   
+Directory .                                                                     
+$1> 
++HEADER 
+  
+CORREL   WACO 
+DATABASE 19MAY30XE
+SESSNAME R4896
+OBSTIME  2019/05/30 2019/05/31
+UTSTART  1830 
+DURATION 24 
+DOY      150-151
+CORRTIME 2019/06/13 
+CORRPASS 1
+EXPORT   DONE 
+  
++SUMMARY
+  
+Qcode      % of Total  % of Correlated
+                Scans            Scans
+  
+5-9               68%              88%
+0                  5%               7%
+1-4,A-H,N          3%               3%
+removed           22%               - 
+  
++CORRELATOR_NOTES 
+The vgosDb for this session is available at 
+https://rorf.usno.navy.mil/vgosDb/2019/19MAY30XE.tgz
+  
++STATION_NOTES
+  
+FORTLEZA (Ft/F): Ok.
+  
+HART15M  (Ht/J): Ok.
+  
+ISHIOKA  (Is/P): Ok.
+  
+KATH12M  (Ke/A): Applied manual phase cal.
+  
+KOKEE    (Kk/K): Ok.
+  
+MATERA   (Ma/I): Removed channel(s) from fringe fitting: SR6U 
+  
+WARK12M  (Ww/W): Removed channel(s) from fringe fitting: SR5U, SR6U 
+  
+                 Applied manual phase cal.
+  
+YARRA12M (Yg/Y): Did not participate. All data minused out. 
+  
++DROP_CHANNELS
+  
+Ma SR6U 
+Ww SR5U SR6U
+  
++MANUAL_PCAL Ke Ww
+  
++CHANNELS 
+  
+ Channels: XR1U = band|polarization|BBC#|sideband 
+  
+XR1U/L BBC01 8212.99
+XR2U   BBC02 8252.99
+XR3U   BBC03 8352.99
+XR4U   BBC04 8512.99
+XR5U   BBC05 8732.99
+XR6U   BBC06 8852.99
+XR7U   BBC07 8912.99
+XR8U/L BBC08 8932.99
+SR1U   BBC09 2225.99
+SR2U   BBC10 2245.99
+SR3U   BBC11 2265.99
+SR4U   BBC12 2295.99
+SR5U   BBC13 2345.99
+SR6U   BBC14 2365.99
+  
++CLOCKS 
+  
+Clocks: WACO
+  
+Station  fmout-gps     Used        Rate  Comments 
+            [usec]   [usec]   [sec/sec] 
+Ft           0.559    0.788   1.475E-13 
+Ht           1.010    3.939   1.199E-14 
+Is           0.590    0.821  -1.563E-14 
+Ke           2.771    4.758  -6.203E-13 
+Kk           5.343    5.812  -3.498E-13 
+Ma          -4.367   -3.749  -2.881E-13 
+Ww         -46.542  -42.882  -1.391E-12 
+Date: 2019/05/30 18:30:00 
+  
++QCODES 
+  
+Qcod   0 1 2 3 4  5  6   7   8    9 A B C D E F   G  H  N    -  Tot 
+------------------------------------------------------------------- 
+FJ:S   2 0 0 0 0  0  0   1   6  164 0 0 0 0 0 0   6  5  0    0  184 
+FJ:X   3 0 0 0 0  0  0   4  44  133 0 0 0 0 0 0   0  0  0    0  184 
+FP:S   2 0 0 0 0  0  0   0   1   15 0 0 0 0 0 0   0  1  0    0   19 
+FP:X   2 0 0 0 0  0  0   1   2   14 0 0 0 0 0 0   0  0  0    0   19 
+FA:S   1 0 0 0 0  0  0   0   0    3 0 0 0 0 0 0   0  0  0    0    4 
+FA:X   1 0 0 0 0  0  0   0   1    2 0 0 0 0 0 0   0  0  0    0    4 
+FK:S   1 0 0 0 0  0  0   0   4   45 0 0 0 0 0 0   0  0  0    0   50 
+FK:X   2 0 0 0 0  0  1   0   4   43 0 0 0 0 0 0   0  0  0    0   50 
+FI:S   3 0 0 0 0  1 16  33  45   29 0 0 0 0 0 0  11 18  0    0  156 
+FI:X   4 0 0 0 0  0  0   0   7  145 0 0 0 0 0 0   0  0  0    0  156 
+FW:S   6 0 0 0 0  0  0   0   0   20 0 0 0 0 0 0   0  0  0    0   26 
+FW:X   6 0 0 0 0  0  0   1   3   16 0 0 0 0 0 0   0  0  0    0   26 
+FY:S   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0    8    8 
+FY:X   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0    8    8 
+JP:S   5 0 0 0 0  0  0   1  16   43 0 0 0 0 0 0   4  4  0    0   73 
+JP:X  10 0 0 0 0  0  1   3  21   38 0 0 0 0 0 0   0  0  0    0   73 
+JA:S   4 0 0 0 0  0  0   0   0  101 0 0 0 0 0 0   0  0  3    0  108 
+JA:X   3 0 0 0 0  0  0   0   4   98 0 0 0 0 0 0   0  0  3    0  108 
+JI:S  11 0 0 0 0  5 30  35  49   32 0 0 0 0 0 0  19 17  0    0  198 
+JI:X  14 0 0 0 0  0  0   1  50  133 0 0 0 0 0 0   0  0  0    0  198 
+JW:S   7 0 0 0 0  0  0   0   1   77 0 0 0 0 0 0   0  0  0    0   85 
+JW:X   5 0 0 0 0  1  0  11   8   57 0 0 0 0 0 0   3  0  0    0   85 
+JY:S   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0   84   84 
+JY:X   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0   84   84 
+PA:S  11 0 0 0 0  0  0   4  29  141 0 0 0 0 0 0   8 13  0    0  206 
+PA:X  11 0 0 0 0  0  1   9  80  105 0 0 0 0 0 0   0  0  0    0  206 
+PK:S   1 0 0 0 0  0  0   0  37  143 0 0 0 0 0 0  50 10  0    0  241 
+PK:X   4 0 0 0 0  0  1  18  89  129 0 0 0 0 0 0   0  0  0    0  241 
+PI:S   1 0 0 0 0  1 11  10  67   28 0 0 0 0 0 0   0  0  0    0  118 
+PI:X  10 0 0 0 0  0  0   3  17   87 0 0 0 0 0 0   1  0  0    0  118 
+PW:S  19 0 0 0 0  0  0   0  10  124 0 0 0 0 0 0   0  0  1    0  154 
+PW:X  11 0 0 0 0  4  3  21  19   93 0 0 0 0 0 0   2  0  1    0  154 
+PY:S   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0  111  111 
+PY:X   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0  111  111 
+AK:S   9 0 0 0 0  0  0   0  16  131 0 0 0 0 0 0   0  0  0    0  156 
+AK:X  14 0 0 0 0  0  0   8  31  103 0 0 0 0 0 0   0  0  0    0  156 
+AI:S  14 0 0 0 0  0  1   4  12   25 0 0 0 0 0 0   1  1  0    0   58 
+AI:X  11 0 0 0 0  0  0   0   4   43 0 0 0 0 0 0   0  0  0    0   58 
+AW:S  49 0 0 0 0  0  0   0   4  210 0 0 0 0 0 0   0  0  2    0  265 
+AW:X  28 0 0 0 0  0  0  12  49  170 0 0 0 0 0 0   4  0  2    0  265 
+AY:S   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0  203  203 
+AY:X   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0  203  203 
+KI:S   2 0 0 0 0  1 20   5  42   17 0 0 0 0 0 0   1  0  0    0   88 
+KI:X   9 0 0 0 0  0  0   1   2   76 0 0 0 0 0 0   0  0  0    0   88 
+KW:S  17 0 0 0 0  0  0   0   1  150 0 0 0 0 0 0   1  0  1    0  170 
+KW:X  18 0 0 0 0  2  2  21   6  113 0 0 0 0 0 0   7  0  1    0  170 
+KY:S   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0   78   78 
+KY:X   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0   78   78 
+IW:S   2 0 0 0 0  0  0   0   1    0 0 0 0 0 0 0   0  0  0    0    3 
+IW:X   2 0 0 0 0  0  0   0   0    1 0 0 0 0 0 0   0  0  0    0    3 
+IY:S   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0   35   35 
+IY:X   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0   35   35 
+WY:S   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0  169  169 
+WY:X   0 0 0 0 0  0  0   0   0    0 0 0 0 0 0 0   0  0  0  169  169 
+------------------------------------------------------------------- 
+Tot  335 0 0 0 0 15 87 207 782 3097 0 0 0 0 0 0 118 69 14 1376 6100 
+QC = 0   Fringes not detected.
+   = 1-9 Fringes detected, no error condition. Higher #, better quality.
+   = B   Interpolation error in fourfit.
+   = D   No data in one or more frequency channels. 
+   = E   Maximum fringe amplitude at edge of SBD, MBD, or rate window.
+   = F   "Fork" problem in processing.
+   = G   Fringe amp in a channel is <.5 times mean amp (only if SNR>20).
+   = H   Low Phase-cal amplitude in one or more channels. 
+   = N   No valid correlator data.
+ Tot     Total number of scans in schedule. 
+ Minus   Scans in original schedule file for which correlation was not
+         attempted, usually because of known station problems.
+  
++SNR_RATIOS 
+  
+MEAN RATIOS = Observed SNR / Predicted SNR  for exp no. 1234
+  
+ ...by baseline, over all sources:
+  
+ bl     X     n       S     n 
+  
+ FJ    0.91  181     1.13  182
+ FP    0.49   17     1.09   17
+ FA    0.67    3     0.69    3
+ FK    0.89   48     1.48   49
+ FI    0.75  152     0.93  153
+ FW    0.72   20     0.76   20
+ FY    0.00    0     0.00    0
+ JP    0.91   63     0.94   68
+ JA    1.02  102     1.06  101
+ JK    0.00    0     0.00    0
+ JI    0.56  184     0.69  187
+ JW    0.85   80     0.71   78
+ JY    0.00    0     0.00    0
+ PA    0.86  195     0.96  195
+ PK    0.77  237     0.98  240
+ PI    0.54  108     0.81  117
+ PW    0.75  142     0.68  134
+ PY    0.00    0     0.00    0
+ AK    0.91  142     0.98  147
+ AI    0.57   47     0.74   44
+ AW    0.72  235     0.61  212
+ AY    0.00    0     0.00    0
+ KI    0.54   79     0.78   86
+ KW    0.71  151     0.68  152
+ KY    0.00    0     0.00    0
+ IW    0.36    1     0.65    1
+ IY    0.00    0     0.00    0
+ WY    0.00    0     0.00    0
+  
++FOURFIT_CONTROL_FILE 
+* Fourfit control file for r4896
+* 
+sb_win -256.0 256.0 mb_win -256.0 256.0 dr_win -300.e-4 300.e-4 
+pc_mode multitone 
+pc_period 5 
+  
+if f_group X
+  ref_freq 8212.99
+  
+if f_group S
+  ref_freq 2225.99
+  
+* setup for Kokee 
+if station K and f_group X
+   pc_tonemask ghijklmn 148 132 132 132 132 132 132 132 
+  
+if station K and f_group S
+   pc_tonemask abcdef 16 16 16 16 16 16 
+  
+* setup for Ishioka 
+if station P and f_group X
+   pc_tonemask ghijklmn 127 127 127 127 127 127 127 127 
+  
+if station P and f_group S
+   pc_tonemask abcdef 239 239 239 239 239 239 
+  
+* Ft / F
+if station F
+lsb_offset  120.0 
+* Ht / J
+if station J
+lsb_offset    0.0 
+* Is / P
+if station P
+lsb_offset   80.0 
+* Ke / A
+if station A
+lsb_offset  -20.0 
+* Kk / K
+if station K
+lsb_offset   70.0 
+* Ma / I
+if station I
+lsb_offset  100.0 
+* Ww / W
+if station W
+lsb_offset    0.0 
+* Yg / Y
+if station Y
+lsb_offset  -20.0 
+  
+if station I and f_group S freqs a b c d e
+if station W and f_group S freqs a b c d
+  
+if station W and f_group S
+pc_phases abcdef -60.1 -62.7 -65.3 -63.8 -125.2 -14.7 
+pc_mode manual
+  
+if station W and f_group X
+pc_phases ghijklmn 162.8 -157.4 -131.0 179.8 -141.8 -76.8 175.5 137.6 
+pc_mode manual
+  
+if station A and f_group S
+pc_phases abcdef -22.8 -31.8 -33.1 -23.2 -106.0 27.1
+pc_mode manual
+  
+if station A and f_group X
+pc_phases ghijklmn -122.1 -61.0 -19.9 -45.3 -73.8 -65.0 -89.9 -93.8 
+pc_mode manual
+  
+  
+* Stuart
+  
++END
+$1< 
+Sorted by time and subsorted by baseline.   -svw-     
+All  baselines used.
+All  sources used.
+Output time window:  earliest latest                                            
+CALC11.01 Ver. 2014.05.16  Fri Jun 14 05:40:22 2019    lsv596 
+CALC 11 Jun 14 2019 -GE-                                                                            
+R4896, FtHtIsKeKkMaWwYg, WX & CB (except Ht,Is,Ke,Ww,Yg), -XLOG-                                    
+ DBCAL: Version 2013.10.18        JUN 14,2019  5:40:28                                              
+r4896, ft-ht-is-ke-kk-ma-ww,                         amb. res. & gion,      GE  
+The following flyby options were used in the solution:
+Station flyby file:  vtrf2008a. 
+Source flyby file :  glo_bkg_ic 
+Nutation offset flyby file :  NONE      
+Earth rotation flyby file  :  usno_final
+Tectonic plate motion file :  vtrf2008a.
+Group delay ambiguities and editing updated.    
+Ionosphere calibrated with IONO IONO  Ve
+Group Ion cal for $19MAY30XE V. 3 based on $19MAY30SE V. 4. 
+Barometer calibration and barometer height offset not available.    
+Eccentricity data store in data base header.    
+Elevation cutoff data stored in database.       
+r4896, ft-ht-is-ke-kk-ma-ww,                         bkg standard solution  GE  
+Real clock break detected at MATERA     
+Real clock break detected at MATERA     
+Real clock break detected at MATERA     
+Real clock break detected at MATERA     
+The following flyby options were used in the solution:
+Station flyby file:  vtrf2008a. 
+Source flyby file :  glo_bkg_ic 
+Nutation offset flyby file :  NONE      
+Earth rotation flyby file  :  usno_final
+Tectonic plate motion file :  vtrf2008a.
+Group delay ambiguities and editing updated.    
+Troposphere and cable cal status for standard solution stored.
+Observation dependent contribution status stored. 
+Reweighting updated for:
+FO-HA FO-IS FO-KA FO-KO FO-MA FO-WA HA-IS HA-KA HA-KO HA-MA 
+HA-WA IS-KA IS-KO IS-MA IS-WA KA-KO KA-MA KA-WA KO-MA KO-WA 
+MA-WA                                                       
+Baseline-dependent clock used. List of names stored.
+Solution data configuration: GROUP DELAYS ONLY      
+Clock and atmosphere constraint information saved.  
+Batchmode clock parameterization saved.               
+Batchmode atmosphere parameterization saved.          
+Ionosphere updated, but correction values are from a previous update.     
+Barometer calibration and barometer height offset not available.    
+Eccentricity data store in data base header.    
+Elevation cutoff data stored in database.       
+ -----------
+ 
+ ------ Tocs -----
+ 
+ -- TC   1 --
+    TE   1   1
+  1 R-FILLER   1   1   1 ********************************
+  2 APLENGTH   1   1   1 Length of accumul. period in sec
+  3 ETD DATA   3   1   1 Earth tide module data (la.,h,l)
+  4 PRE DATA   1   1   1 Precession constant (asec/cent).
+  5 REL DATA   1   1   1 Relativity mod data (gamma).    
+  6 PI         1   1   1 Pi - to 17 digits accuracy.     
+  7 HALF PI    1   1   1 Half pi - to 17 digits accuracy.
+  8 RAD/DEG    1   1   1 Number of radians per degree.   
+  9 VLIGHT     1   1   1 The speed of light (m/sec).     
+ 10 GAUSS      1   1   1 Gauss's constant (rad).         
+ 11 ACCELGRV   1   1   1 Accel grav at erth surface m/s^2
+ 12 GMSUN      1   1   1 GM of the Sun (m^3/sec^2).      
+ 13 GMEARTH    1   1   1 GM of the Earth (m^3/sec^2).    
+ 14 GMMOON     1   1   1 GM of the Moon (m^3/sec^2).     
+ 15 TSEC/AU    1   1   1 Number of seconds per A.U.      
+ 16 EARTHRAD   1   1   1 Earth's equatorial radius (m).  
+ 17 EMS/MMS    1   1   1 The Earth-Moon mass ratio.      
+ 18 U-GRV-CN   1   1   1 Universal grav con m^3/kg*s^3.  
+ 19 E-FLAT     1   1   1 Earth flattening con (unitless).
+ 20 CALC VER   1   1   1 CALC version number             
+ 21 FWOB INF   3   1   1 Final Value wobble array descr. 
+ 22 FWOBX&YT   2  15   1 Final wobble X,Y component value
+ 23 WOBEPOCH   2   2   1 Interpolated wobble array def   
+ 24 FUT1 INF   4   1   1 Final Value TAI-UT1 array descrp
+ 25 FUT1 PTS  15   1   1 Final Value TAI-UT1 data points.
+ 26 A1 - UTC   3   1   1 FJD, A1-UTC (sec),rate off.(sec)
+ 27 TAI- UTC   3   1   1 FJD,TAI-UTC (sec),rate off.(sec)
+ 28 A1 - TAI   3   1   1 TAI USNO- TAI BIH = 0.03439 sec.
+ 29 ROTEPOCH   2   2   1 UT1,pole interp.reference epochs
+ 30 UT1EPOCH   2   2   1 TAI - UT1 epoch value definition
+ 31 SITERECS   3   7   1 Site cartesian coords (m).      
+ 32 SITEZENS   7   1   1 Site zenith path delays (nsec). 
+ 33 AXISOFFS   7   1   1 Axis offsets (m).               
+ 34 SITOCAMP  11   7   1 Vert ocean loading ampltudes (m)
+ 35 SITOCPHS  11   7   1 Vert ocean loading phases (rad).
+ 36 SITHOCAM  11   2   7 Horz ocean loading ampltudes (m)
+ 37 SITHOCPH  11   2   7 Horz ocean loading phases (rad).
+ 38 AXISTILT   2   7   1 Fixed axis tilts (arc-sec).     
+ 39 OPTLCOEF   6   7   1 Ocean pole tide loading coefs.  
+ 40 STAR2000   2  70   1 J2000 source RAs, decs (rd,rd). 
+ 41 MEANCABL   7   1   1 Mean cable calibration (seconds)
+ 42 ECCCOORD   3   7   1 Eccentricity coords. (m)        
+ 43 ERROR K    2  21   1 Formal error constants          
+ 44 ATM_CNST   1   1   1 Atmosphere constraint. ps/hr    
+ 45 CLK_CNST   1   1   1 Clock constraint-Parts in 1.e14 
+ 46 CLK_INTV   1   1   1 Batchmode clock interval - hours
+ 47 BRK_EPOC   4   1   1 Batchmode clock break epochs    
+ 48 ATM_INTV   1   1   1 Batchmode atmos interval - hours
+ 49 CLOOFACM   4   1   1 A priori clock offset (sec)     
+ 50 CLODRACM   4   1   1 A priori clock drift (sec/sec)  
+ 51 I-FILLER   1   1   1 ********************************
+ 52 EXPSERNO   1   1   1 Experiment Serial Number........
+ 53 NLAGS      1   1   1 Num of lags used for correlation
+ 54 # SITES    1   1   1 Number of sites.                
+ 55 # STARS    1   1   1 Number of radio sources.        
+ 56 NUMB OBS   1   1   1 Number of observations in file. 
+ 57 INTRVAL4   5   2   1 First,last UTC tag, 4 digit year
+ 58 INTERVAL   5   2   1 First,last UTC tag in input file
+ 59 CALCFLGV  31   1   1 CALC flow control flags valu def
+ 60 TIDALUT1   1   1   1 Flag for tidal terms in UT1 sers
+ 61 AXISTYPS   7   1   1 Axis type (1-eq,2-xy,3-azel,4,5)
+ 62 SOL_DATA   1   1   1 Stnd sol data. IDATYP from SOCOM
+ 63 # CLK_RF   1   1   1 # of clock reference stations   
+ 64 BRK_NUMB   1   1   1 Number of batchmode clock breaks
+ 65 BRK_FLAG   4   1   1 Batchmode clock break flags     
+ 66 BASLSTAT  49   1   1 Baselines selection status      
+ 67 SOURSTAT  70   1   1 Sources selection status        
+ 68 SUPMET     1   1   1 Suppression method              
+ 69 CAL FLGS   7   1   1 Standard cal configuration      
+ 70 FCL FLGS   7   7   1 Standard flcal configuration    
+ 71 PRT FLAG   1   1   1 Atmosphere partial to be applied
+ 72 MCALSTAT   2   1   1 Mode calibrations status        
+ 73 OBCLFLGS   1   1   1 Standard contribs configuration 
+ 74 A-FILLER   1   1   1 ********************************
+ 75 CORPLACE  16   1   1 Correlator name.................
+ 76 CORRTYPE   4   1   1 Correlator type: MK3/MK4/K4 etc.
+ 77 EXPCODE   16   1   1 Experiment name.................
+ 78 EXPDESC   40   1   1 Experiment description..........
+ 79 FOURF CF  48   1   1 Control file name for fourfit...
+ 80 FOURF CS  64   1   1 Command string used for fourfit.
+ 81 PI NAME   40   1   1 Agency/contact_person/PI name...
+ 82 RECMODE   40   1   1 Recording mode..................
+ 83 TECTMODL  40   1   1 Default tectonic plate modelname
+ 84 SITNAMES   4   7   1 Site names array.               
+ 85 STRNAMES   4  70   1 Source names array.             
+ 86 CALCFLGN   2  31   1 CALC flow control flags name def
+ 87 ATI MESS  40   1   1 ATIME Message Definition        
+ 88 ATI CFLG  40   1   1 ATIME Flow Control Message Def. 
+ 89 CTI MESS  40   1   1 CTIMG Message Definition        
+ 90 CTI CFLG  40   1   1 CTIMG Flow Control Message Der  
+ 91 PEP MESS  40   1   1 PEP Utility Message Definition  
+ 92 NUT MESS  40   1   1 Nutation message definition     
+ 93 NUT CFLG  40   1   1 Nutation flow control mess def. 
+ 94 WOB MESS  40   1   1 Wobble message definition.      
+ 95 WOBINTRP  30   1   1 Interp. scheme for polar motion.
+ 96 WOB CFLG  40   1   1 Wobble flow control mess def.   
+ 97 FWOBTEXT  40   1   1 Final Value wobble origin text. 
+ 98 UT1 MESS  40   1   1 UT1 Module message definition   
+ 99 UT1 CFLG  40   1   1 UT1 control flag message def.   
+100 UT1INTRP  30   1   1 Message for UT1 interp. scheme  
+101 FUT1TEXT  40   1   1 Final Value TAI-UT1 origin text.
+102 EOPSCALE   4   1   1 Time scale of EOP table epochs. 
+103 SIT MESS  40   1   1 Site Module Message Definition  
+104 TECTPLNM   2   7   1 4-char tectonic plate names.    
+105 OCE STAT   2   7   1 Ocean loading station status.   
+106 STR MESS  40   1   1 Star module message definition  
+107 STR CFLG  40   1   1 Parallax flow control mess def  
+108 STAR REF  10  70   1 Source of coordinate values.    
+109 ETD MESS  40   1   1 Earth Tide message definition   
+110 ETD CFLG  40   1   1 Earth Tide flow control mess def
+111 OCE MESS  40   1   1 Ocean loading message definition
+112 OCE CFLG  40   1   1 Ocean load flow control mess def
+113 PTD MESS  40   1   1 Pole tide message definition    
+114 PTD CFLG  40   1   1 Pole tide flow control mess def 
+115 ATM MESS  40   1   1 Atmosphere message definition   
+116 ATM CFLG  40   1   1 Atmosphere control flag mess def
+117 AXO MESS  40   1   1 Axis Offset Message Definition  
+118 AXO CFLG  40   1   1 Axis Offset Control flag mes def
+119 PAN MESS  40   1   1 Feedhorn rot. angle mod. ident. 
+120 PLX MESS  40   1   1 Parallax message definition     
+121 PLX CFLG  40   1   1 Parallax flow control mess def  
+122 THE MESS  40   1   1 Theory module identification    
+123 REL CFLG  30   1   1 Relativisitc bending use status 
+124 CBL STAT   4   7   1 Stations for cable sign         
+125 CBL SIGN   7   1   1 Signs of cable cal application  
+126 ECCNAMES   9   7   1 Ecc. site and monument names.   
+127 ECCTYPES   7   1   1 Eccentricy types - XY or NE.    
+128 ERROR BL   4   2  21 B.L.names for formal errors     
+129 EL-CUT     8   1   1 Solution elevation cutoff data. 
+130 BLDEPCKS   8   8   1 Bl-dependent clock list         
+131 CLKBREAK   1   1   1 Status of clock break existence 
+132 ATM_CFLG   1   1   1 Atmosphere constraint use flag  
+133 CLK_CFLG   1   1   1 Clock constraint use flag.      
+134 BATCHCNT   2   1   1 Batchmode parms use flag.       
+135 CLK_SITE   4   1   1 Batchmode clock reference site  
+136 CLK_SITS   4   1   1 List of clock reference stations
+137 BRK_SNAM   4   4   1 Batchmode clock break stations  
+138 STAT_ACM   4   4   1 Stations with a priori clock mod
+139 CALSITES   4   7   1 List of sites for standard cal  
+140 CAL LIST   4   6   1 Key to the standard cal config  
+141 FCL LIST   4   8   1 Key to the standard flcal config
+142 MCALNAMS   4  15   1 Mode calibrations names         
+143 OBCLLIST   4  14   1 Key to standard contribs config 
+144 D-FILLER   1   1   1 ********************************
+145 J-FILLER   1   1   1 ********************************
+146 NUM4 OBS   1   1   1 Number of observations (I*4)    
+ -- TC   2 --
+    TE   2   1
+  1 R-FILLER   1   1   1 ********************************
+  2 #SAMPLES   2  16   1 # of samples by sideband and cha
+  3 AMPBYFRQ   2  16   1 Amp(0-1), phs by chan(-180to180)
+  4 COHERCOR   1   1   1 Corr coeff (0 --> 1)............
+  5 DEL OBSV   2   1   1 Observed delay us in 2 parts....
+  6 DELRESID   1   1   1 Delay residual (sec)............
+  7 DELSIGMA   1   1   1 Delay err (sec).................
+  8 DELTAEPO   1   1   1 Offset from center of scan (sec)
+  9 GC PHASE   1   1   1 Tot phase ref to cen of Earth...
+ 10 GPDLAMBG   1   1   1 Group delay ambiguity (sec).....
+ 11 GROBSDEL   1   1   1 Observed group delay in sec.....
+ 12 PHASECAL   2   1   1 PC rate by sta ( us per s)......
+ 13 RAT OBSV   1   1   1 Observd delay rate (sec per sec)
+ 14 RATRESID   1   1   1 Rate resid (sec per sec)........
+ 15 RATSIGMA   1   1   1 Rate formal error(sec per sec)..
+ 16 REF FREQ   1   1   1 Freq to which phase is referred.
+ 17 RFREQ     16   1   1 RF freq by channel (MHz)........
+ 18 SAMPLRAT   1   1   1 Sample rate (Hz)................
+ 19 SB DELAY   1   1   1 Single band delay (microsec)....
+ 20 SB SIGMA   1   1   1 SB delay error microseconds.....
+ 21 SBRESID    1   1   1 Single band delay residual......
+ 22 SEC TAG    1   1   1 Seconds part of UTC TAG.........
+ 23 SNRATIO    1   1   1 Signal to noise  ratio..........
+ 24 SRCHPAR    6   1   1 FRNGE/Fourfit search parameters.
+ 25 STARTSEC   1   1   1 Start time in sec past hour.....
+ 26 STOP SEC   1   1   1 Stop  time in sec past hour.....
+ 27 TOTPHASE   1   1   1 Total phase degrees mod 360.....
+ 28 UVF/ASEC   2   1   1 U,V in FR per arcsec, from CALC 
+ 29 CT SITE1   1   1   1 CT fraction at obs site 1       
+ 30 EARTH CE   3   3   1 Earth barycentric coordinates...
+ 31 SUN DATA   3   2   1 Solar geocentric coordinates....
+ 32 MOONDATA   3   2   1 Lunar geocentric coordinates....
+ 33 NUT06XYS   3   2   1 2000/2006 Nut/Prec X,Y,S & Rates
+ 34 NUT06XYP   2   2   1 2000/2006 Nut/Prec X,Y Partials 
+ 35 NUT2006A   2   2   1 2000/2006 Nut/Prec psi/epsilon  
+ 36 NUT WAHR   2   2   1 Wahr nut vals  - Dpsi,Deps&rates
+ 37 WOB PART   2   2   1 Wobble partial derivatives def. 
+ 38 WOBXCONT   2   1   1 X Wobble contribution definition
+ 39 WOBYCONT   2   1   1 Y Wobble contribution definition
+ 40 WOBLIBRA   2   1   1 High freq libration wobble contr
+ 41 WOBORTHO   2   1   1 ORTHO_EOP tidal wobble contribtn
+ 42 POLAR XY   2   1   1 Polar motion X & Y for obs (rad)
+ 43 UT1 PART   2   2   1 UT1 partial derivatives def.    
+ 44 UT1 -TAI   1   1   1 UT1 time of day for this obsvr. 
+ 45 UT1ORTHO   2   1   1 ORTHO_EOP Tidal UT1 contribution
+ 46 UT1LIBRA   2   1   1 UT1 Libration contribution.     
+ 47 SIT PART   3   2   2 Site partial derivative def.    
+ 48 STR PART   2   2   1 Star partial derivatives def.   
+ 49 ETD CONT   2   1   1 Earth tide contributions def.   
+ 50 OCE CONT   2   1   1 Ocean loading contributions def.
+ 51 OCE_OLD    2   1   1 Old Ocean loading contribution. 
+ 52 OCE DELD   3   2   2 Ocean load site depndnt displace
+ 53 OCE HORZ   2   2   1 Site-dep ocean cont - horizontal
+ 54 OCE VERT   2   2   1 Site-dep ocean cont - vertical  
+ 55 PTD CONT   2   1   1 Pole tide contributions def.    
+ 56 PTDXYPAR   2   2   1 Pole Tide Partials w.r.t. X & Y 
+ 57 PTOLDCON   2   1   1 Old Pole Tide Restorer Contrib. 
+ 58 OPTLCONT   2   1   1 Ocean Pole Tide Load Contributn 
+ 59 NDRYPART   2   2   1 Nhmf2 dry partial deriv. def.   
+ 60 NWETPART   2   2   1 Whmf2 wet partial deriv. def.   
+ 61 NDRYCONT   2   2   1 Nhmf (dry) atm. contribution    
+ 62 NWETCONT   2   2   1 Whmf (wet) atm. contribution    
+ 63 NGRADPAR   2   2   2 Niell dry atm. gradient partials
+ 64 EL-THEO    2   2   1 Elevation array definition      
+ 65 AZ-THEO    2   2   1 Azimuth array definition        
+ 66 AXO PART   2   2   1 Axis Offset partial deriv. def. 
+ 67 AXO CONT   2   2   1 New Axis Offset Contributions   
+ 68 PARANGLE   2   1   1 Feedhorn rot. angle, ref and rem
+ 69 FEED.COR   2   1   1 Feedhorn corr. in CORFIL scheme 
+ 70 TILTRMVR   2   1   1 Axis Tilt Contribution Remover  
+ 71 CF2J2K     3   3   3 Crust-fixed-to-J2000 Rot. Matrix
+ 72 PLX PART   2   1   1 Parallax partial deriv. def.    
+ 73 PLX1PSEC   2   1   1 Parallax partial/contr, 1 parsec
+ 74 CONSNDEL   2   1   1 Consensus theo. delay (microsec)
+ 75 CONSNRAT   1   1   1 Consensus theo. rate (sec/sec)  
+ 76 CONSPART   2   1   1 Consensus partial w.r.t. Gamma  
+ 77 CON CONT   2   1   1 Consensus bending contrib. (sec)
+ 78 SUN CONT   2   1   1 Consensus bending contrib. (sec)
+ 79 SUN2CONT   2   1   1 High order bending contrib.(sec)
+ 80 BENDPART   2   1   1 Grav. bend. partial w.r.t. Gamma
+ 81 TEMP C     2   2   1 Temp in C at local WX station   
+ 82 ATM PRES   2   2   1 Pressure in mb at site          
+ 83 REL.HUM.   2   2   1 Rel.Hum. at local WX st (50%=.5)
+ 84 CABL DEL   2   2   1 Cable calibration data          
+ 85 UNPHASCL   2   2   1 UnPhaseCal effect - group&rate  
+ 86 GRIONFRQ   1   1   1 Effective ion.frq for gr.del MHz
+ 87 PHIONFRQ   1   1   1 Effective ion.frq for ph.del MHz
+ 88 ION CORR   2   1   1 Ion correction. Add to theo. sec
+ 89 IONRMS     2   1   1 Ion correction to sigma. sec    
+ 90 EFF FREQ   3   1   1 Effective freqs, opposite band  
+ 91 RTOBS XS   1   1   1 Rate observable, opposite band  
+ 92 RTERR XS   1   1   1 Rate formal err, opposite band  
+ 93 DLOBS XS   1   1   1 Delay observable, opposite band 
+ 94 DLERR XS   1   1   1 Delay formal err, opposite band 
+ 95 DPHAS XS   1   1   1 Phase observable, opposite band 
+ 96 DPHER XS   1   1   1 Phase formal err, opposite band 
+ 97 TOTPHA_S   1   1   1 S-band Total phase (in degrees) 
+ 98 REF FR_S   1   1   1 Fr to w.phase is referred S-band
+ 99 SNR_S      1   1   1 Signal to noise ratio for S-band
+100 COHCOR_S   1   1   1 Corr coeff (0 --> 1) for S-band 
+101 SB DEL_S   1   1   1 Single band delay for S-band    
+102 SB SIG_S   1   1   1 SB delay error S-band, mks      
+103 GRPAMB_S   1   1   1 Group delay ambiguity for S-band
+104 I-FILLER   1   1   1 ********************************
+105 #CHANELS   1   1   1 No. of U-L pairs in integration.
+106 BITSAMPL   1   1   1 Number of bits per sample.......
+107 CALBYFRQ   3   2  16 PC amp,phs,frq by sta,channel...
+108 DELUFLAG   1   1   1 Delay unweight flag             
+109 NO.OF AP   2  16   1 # of AP by sideband and channel.
+110 PHCALOFF   2  16   1 Phase cal offset (-18000/18000).
+111 PHCALSTS   2   1   1 Phase cal status: 0/1/2 ........
+112 RATUFLAG   1   1   1 Delay rate unweight flag........
+113 UTC TAG    5   1   1 Epoch UTC YMDHM.................
+114 UTC TAG4   6   1   1 Epoch UTC YMDHMS (4 digit year).
+115 UNPHAFLG   2   2   1 UnPhaseCal flag                 
+116 # AMBIG    1   1   1 No. of ambiguities              
+117 ION CODE   1   1   1 Ion corr code. -1=no good, 0=OK 
+118 ION_BITS   1   1   1 ICORR for full ion tracking.    
+119 #GAMBG_S   1   1   1 No. of ambiguities for S-band   
+120 UACSUP     1   1   1 User action for suppression     
+121 A-FILLER   1   1   1 ********************************
+122 BASELINE   4   2   1 Ref and rem site names..........
+123 POLARIZ    2  16   1 Polarization per sta/chan R/L...
+124 QUALCODE   1   1   1 FRNGE quality  index 0 --> 9....
+125 SCANNAME   5   1   1 Scan name ......................
+126 SITCODES   2   1   1 Two-letters site codes .........
+127 STAR ID    4   1   1 Radio source name...............
+128 QCODE XS   1   1   1 Quality code, opposite band     
+129 D-FILLER   1   1   1 ********************************
+130 J-FILLER   1   1   1 ********************************
+131 #PAMBG_S   1   1   1 # phase ambiguities for S-band  
+132 AUTO_SUP   1   1   1 Automatic suppression status    
+133 USER_SUP   1   1   1 User observation suppression sts
+134 USER_REC   1   1   1 User observation recovery status
+ -- TC   3 --
+    TE   3   1
+  1 R-FILLER   1   1   1 ********************************
+  2 ABASACCE   1   1   1 Corel bas/apr accel (1/sec**2)..
+  3 ABASDEL    1   1   1 Corel bas/apr delay (sec).......
+  4 ABASRATE   1   1   1 Corel bas/apr delay rate (s/s)..
+  5 CORCLOCK   2   2   1 Clock offset(sec)/rate(sec/sec).
+  6 DISCARD    1   1   1 Percent data discarded by FRNGE.
+  7 EFF.DURA   1   1   1 Effective run duration sec......
+  8 FALSEDET   1   1   1 Prob of false det from FRNGE....
+  9 GC MBD     1   1   1 Tot geocenter group delay (sec).
+ 10 GC RATE    1   1   1 Tot geocenter delay rate (s/s)..
+ 11 GC SBD     1   1   1 Tot geocenter sbd delay (sec)...
+ 12 GCRESPHS   1   1   1 Resid phs corrected to cen of E.
+ 13 IDELAY     2   1   1 Corel instrumental delay (sec)..
+ 14 INCOH2     1   1   1 Incoh amp from FRNGE plot segs..
+ 15 INCOHAMP   1   1   1 Fr. amp from incoh int of chan..
+ 16 QBFACTOR   1   1   1 Measure of uniformity of data...
+ 17 STARELEV   2   1   1 Elev angles calc by COREL.......
+ 18 I-FILLER   1   1   1 ********************************
+ 19 CORELVER   1   1   1 Correlator software version numb
+ 20 CORR UTC   6   1   1 UTC time tag of correlation.....
+ 21 DBEDITVE   3   1   1 Dbedit revision date YYYY MM DD 
+ 22 ERRORATE   2   2  16 Log err rate by sta, sb, channel
+ 23 FOURFUTC   6   1   1 Fourfit processing time YMDHMS..
+ 24 FOURFVER   2   1   1 Fourfit version number..........
+ 25 SCAN UTC   6   1   1 Nominal scan time YMDHMS........
+ 26 STARTOFF   1   1   1 Offset nominal start time (sec).
+ 27 STOP OFF   1   1   1 Offset nominal stop time (sec)..
+ 28 UTCM TAG   6   1   1 UTC at central epoch YMDHMS.....
+ 29 A-FILLER   1   1   1 ********************************
+ 30 CHAN ID   16   1   1 One-letter Fourfit channel ID...
+ 31 CORBASCD   1   1   1 Correlator baseline code (2 ch).
+ 32 CROOTFIL   8   1   1 Correlator root file name.......
+ 33 FOURFFIL   8   1   1 Fourfit output filename.........
+ 34 FRNGERR    1   1   1 Fourfit error flag blank=OK.....
+ 35 FRQGROUP   1   1   1 Frequency group code............
+ 36 FOURFFXS   8   1   1 Fourfit output filename S-band  
+ 37 D-FILLER   1   1   1 ********************************
+ 38 J-FILLER   1   1   1 ********************************
+ -----------
+ 
+ Observations:        2338
